@@ -1,0 +1,19 @@
+{
+  "name": "urserver",
+  "version": "1.0.0",
+  "description": "this server connects the frontend uraccessreview to a very basic database which keeps track of the users",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
+  }
+}
