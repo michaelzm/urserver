@@ -4,7 +4,7 @@
   "description": "this server connects the frontend uraccessreview to a very basic database which keeps track of the users",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
