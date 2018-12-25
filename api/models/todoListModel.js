@@ -7,16 +7,22 @@ var TaskSchema = new Schema({
         type: String,
         required: 'Kindly enter the name of the task'
     },
+    rating1: {
+        type: number,
+        required: 'rating1 missing'
+    },
+    rating2: {
+        type: number,
+    },
+    rating3: {
+        type: number,
+    },
+    rating4: {
+        type: number,
+    },
     Created_date: {
         type: Date,
         default: Date.now
-    },
-    status: {
-        type: [{
-            type: String,
-            enum: ['pending', 'ongoing', 'completed']
-        }],
-        default: ['pending']
     }
 });
 
