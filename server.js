@@ -11,6 +11,7 @@ mongoose.connect('mongodb://mongodb:mongodb1@ds243344.mlab.com:43344/heroku_td2j
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors())
 
 
 var routes = require('./api/routes/todoListRoutes'); //importing route
