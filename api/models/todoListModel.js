@@ -8,17 +8,17 @@ var TaskSchema = new Schema({
         required: 'Kindly enter the name of the task'
     },
     rating1: {
-        type: number,
+        type: Number,
         required: 'rating1 missing'
     },
     rating2: {
-        type: number,
+        type: Number,
     },
     rating3: {
-        type: number,
+        type: Number,
     },
     rating4: {
-        type: number,
+        type: Number,
     },
     Created_date: {
         type: Date,
