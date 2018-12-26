@@ -2,14 +2,15 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var TaskSchema = new Schema({
+var EvaluationSchema = new Schema({
     name: {
         type: String,
-        required: 'Kindly enter the name of the task'
+    },
+    reviewCount: {
+        type: Number
     },
     rating1: {
         type: Number,
-        required: 'rating1 missing'
     },
     rating2: {
         type: Number,
@@ -26,4 +27,4 @@ var TaskSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('Evaluation', EvaluationSchema);
