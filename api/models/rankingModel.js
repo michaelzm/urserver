@@ -3,14 +3,18 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var RankingSchema = new Schema({
-    name: {
+    user_lastName: {
         type: String,
     },
-    reviewCount: {
+    user_counter: {
         type: Number
     },
-    level: {
+    userLevel: {
         type: Number,
+    },
+    Created_date: {
+        type: Date,
+        default: Date.now
     }   
 });
 
