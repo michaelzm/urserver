@@ -3,6 +3,7 @@ var express = require('express'),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
   Task = require('./api/models/todoListModel'), //created model loading here
+  Ranking = require('./api/models/rankingModel') //ranking model
   bodyParser = require('body-parser');
   var cors = require('cors')
   app.use(cors())
@@ -14,7 +15,6 @@ mongoose.connect('mongodb://mongodb:mongodb1@ds243344.mlab.com:43344/heroku_td2j
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-
 
 var routes = require('./api/routes/todoListRoutes'); //importing route
 routes(app); //register the route

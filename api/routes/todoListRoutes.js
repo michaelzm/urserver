@@ -8,12 +8,13 @@ module.exports = function(app) {
     .get(todoList.list_all_tasks)
     .post(todoList.create_a_task);
 
-  app.route('/ranking')
-    .get(todoList.list_all_tasks)
-    .post(todoList.create_a_task);
-
   app.route('/formular/:taskId')
     .get(todoList.read_a_task)
     .put(todoList.update_a_task)
     .delete(todoList.delete_a_task);
+
+
+  app.route('/ranking')
+  .get(ranking.list_all_tasks)
+  .post(ranking.create_a_task);
 };
