@@ -4,10 +4,10 @@ var Schema = mongoose.Schema;
 
 var GamificationSchema = new Schema({
 
-    user_lastName: {
+    name: {
         type: String,
     },
-    user_counter: {
+    reviewCunter: {
         type: Number
     },
     userLevel: {
@@ -37,7 +37,7 @@ var GamificationSchema = new Schema({
     partB5: {
         type: Number,
     },
-    partB: {
+    partB6: {
         type: Number,
     },    
     Created_date: {
