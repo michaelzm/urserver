@@ -2,6 +2,7 @@
 module.exports = function(app) {
   var todoList = require('../controllers/todoListController');
   var ranking = require('../controllers/rankingController');
+  var gamification = require('../controllers/gamificationController');
 
   // todoList Routes
   app.route('/formular')
@@ -17,4 +18,11 @@ module.exports = function(app) {
   app.route('/ranking')
   .get(ranking.list_all_tasks)
   .post(ranking.create_a_task);
-};
+
+
+  app.route('/gamification')
+    .get(gamification.list_all_tasks)
+    .post(gamification.create_a_task);
+
+
+  };
