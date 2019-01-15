@@ -7,7 +7,7 @@ var GamificationSchema = new Schema({
     name: {
         type: String,
     },
-    reviewCunter: {
+    reviewCount: {
         type: Number
     },
     userLevel: {
