@@ -7,6 +7,12 @@ var GamificationSchema = new Schema({
     name: {
         type: String,
     },
+    age: {
+        type: String,
+    },
+    gender: {
+        type: String,
+    },
     reviewCount: {
         type: Number
     },
