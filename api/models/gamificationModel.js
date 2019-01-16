@@ -50,7 +50,10 @@ var GamificationSchema = new Schema({
             type: Number,
     },
     accuracy: {
-        type: Number
+        type: Number,
+    },
+    completedMissions: {
+        type: Number,
     },    
     Created_date: {
         type: Date,
