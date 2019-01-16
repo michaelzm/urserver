@@ -28,8 +28,8 @@ console.log(routes)
 app.listen(port);
 
 app.use(function(req, res) {
-  res.status(404).send({url: req.originalUrl + '. This index-site does not provide any data. The data can be found under urserver.herokuapp.com/formular.'})
+  res.status(404).send({url: req.originalUrl + '. This index-site does not provide any data. The stored data can be found either under urserver.herokuapp.com/gamification or urserver.herokuapp.com/basic.'})
 });
 
 
-console.log('todo list RESTful API server started on: ' + port);
+console.log('RESTful API server started on: ' + port);
