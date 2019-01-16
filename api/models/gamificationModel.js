@@ -45,6 +45,9 @@ var GamificationSchema = new Schema({
     },
     partB6: {
         type: Number,
+    },
+    accuracy: {
+        type: Number
     },    
     Created_date: {
         type: Date,
