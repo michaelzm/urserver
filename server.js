@@ -3,11 +3,11 @@
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
-  mongoose = require('mongoose'),
-  Task = require('./api/models/todoListModel'), //created model loading here
+  mongoose = require('mongoose')
+  Task = require('./api/models/todoListModel')//created model loading here
   Ranking = require('./api/models/rankingModel') //ranking model
   Gamification = require('./api/models/gamificationModel') //gamification Formular model
-  Basic = reequire('./api/models/basicModel') //basic Formular model
+  Basic = require('./api/models/basicModel') //basic Formular model
   bodyParser = require('body-parser');
   var cors = require('cors')
   app.use(cors())
