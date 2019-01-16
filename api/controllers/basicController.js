@@ -2,7 +2,7 @@
 
 
 var mongoose = require('mongoose'),
-  Task = mongoose.model('Ranking');
+Task = mongoose.model('Basic');
 
 exports.list_all_tasks = function(req, res) {
   Task.find({}, function(err, task) {
