@@ -22,8 +22,8 @@ module.exports = function(app) {
 
 
   app.route('/basic')
-  .get(gamification.list_all_tasks)
-  .post(gamification.create_a_task);
+  .get(basic.list_all_tasks)
+  .post(basic.create_a_task);
 
 
   };
